@@ -1,8 +1,9 @@
 # 30 Day Map Challenge
 
+## Overview
 ![](30-dmc-2022.png)
 
-## Overview
+## My visualizations
 
 ### Day 1 
 
