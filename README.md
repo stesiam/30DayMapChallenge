@@ -7,6 +7,7 @@
 
 ### Day 1 
 
+![](Day 1 - Points/greek_schools_map-30dmc.png)
 
 ### Day 2 
 
