@@ -45,5 +45,5 @@ ggsave(
   filename = "Day 3 - Polygons/greece-regions-30dmc.png",
   plot = map,
   device = "png",
-  bg = "grey46")
+  bg = "grey65")
 
