@@ -42,5 +42,5 @@ ggsave(
   filename = "Day 5 - Ukraine/d5-2022-30dmc.png",
   plot = map,
   device = "png",
-  bg = "grey60")
+  bg = "yellow4")
 
