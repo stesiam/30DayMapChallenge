@@ -28,7 +28,7 @@ map = ggplot2::ggplot(data = ukraine_map) +
           color = "blue"
           ) +
   labs(
-    title = "List of Ports in Ukraine",
+    title = "Ports in Ukraine",
     caption = "**stesiam** | **Data :** Humanitarian OpenStreetMap Team (HOT) - data.humdata.org"
   ) +
   theme_void() +
@@ -42,5 +42,7 @@ ggsave(
   filename = "Day 5 - Ukraine/d5-2022-30dmc.png",
   plot = map,
   device = "png",
-  bg = "yellow4")
+  bg = "#f7f5bc",
+  height = 7,
+  width = 7)
 

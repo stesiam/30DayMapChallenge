@@ -34,13 +34,14 @@ map = ggplot2::ggplot(data = greece_map) +
   )+
   theme_void() +
   theme(
-    plot.caption = element_markdown(family = "mont", size = 12),
-    plot.title = element_markdown(family = "mont", size = 20, hjust = 0.5),
-    plot.subtitle = element_markdown(family = "mont", size = 15)
+    plot.title = element_markdown(family = "clim", size = 60, hjust = 0.5),
+    plot.subtitle = element_markdown(family = "mont", size = 25, hjust = 0.5, lineheight = 0.4),
+    plot.caption = element_markdown(family = "mont", size = 20, hjust = 0.5),
   )
 
 ggsave(
-  filename = "greek_schools_map-30dmc.png",
+  filename = "Day 1 - Points/d1-2022-30dmc.png",
   plot = map,
   device = "png",
   bg = "white")
+

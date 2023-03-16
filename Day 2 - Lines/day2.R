@@ -30,13 +30,14 @@ map = ggplot2::ggplot() +
   )+
   theme_void() +
   theme(
-    plot.title = element_markdown(family = "mont", size = 60, hjust = 0.5, face = "bold"),
-    plot.subtitle = element_markdown(family = "mont", size = 30, lineheight = 4),
-    plot.caption = element_markdown(family = "mont", size = 25, lineheight = 4)
+    plot.title = element_markdown(family = "clim", size = 60, hjust = 0.5),
+    plot.subtitle = element_markdown(family = "mont", size = 25, hjust = 0.5, lineheight = 0.4),
+    plot.caption = element_markdown(family = "mont", size = 20, hjust = 0.5),
   )
 
 ggsave(
-  filename = "Day 2 - Lines/greek_railway-30dmc.png",
+  filename = "Day 2 - Lines/d2-2022-30dmc.png",
   plot = map,
   device = "png",
   bg = "white")
+
