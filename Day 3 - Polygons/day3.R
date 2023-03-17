@@ -28,22 +28,26 @@ greece_region_map$Population = c(562069, 1792069, 255056,
 ## Visualization
 
 map = ggplot2::ggplot(data = greece_region_map) +
-  geom_sf() +
+  geom_sf(aes(fill = PER)) +
   labs(
     title = "Greece's Regions",
+    subtitle = "Greece is divided in 13 regions (first level administrative entities). <br> 
+    Biggest region is **Central Macedonia**. <br> 
+    The most populated region is **Attica**,",
     caption = "**stesiam**, 2023 | Data : &nbsp; geodata.gov.gr"
   )+
   theme_void() +
   theme(
     plot.title = element_markdown(family = "clim", size = 60, hjust = 0.5, face = "bold"),
-    plot.caption = element_markdown(family = "clim", size = 23, hjust = 0.5),
+    plot.subtitle = element_markdown(family = "mont", size = 25, hjust = 0.5, lineheight = 0.4),
+    plot.caption = element_markdown(family = "mont", size = 23, hjust = 0.5),
     legend.position = "none"
   )
 
 
 ggsave(
-  filename = "Day 3 - Polygons/greece-regions-30dmc.png",
+  filename = "Day 3 - Polygons/d3-2022-30dmc.png",
   plot = map,
   device = "png",
-  bg = "grey65")
+  bg = "grey88")
 
