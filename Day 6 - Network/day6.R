@@ -16,7 +16,6 @@ showtext_auto()
 ## Read shapefile
 
 
-
 lux_bus_line = st_read("Day 6 - Network/Luxembourg_Bus_Lines/Cdt - Buslinnen AVL_ln.shp") 
 lux_bus_point = st_read("Day 6 - Network/Luxembourg_Bus_Lines/Cdt - Buslinnen AVL_pt.shp")
 lux = st_read("Day 6 - Network/limadmin-shp/LIMADM_CANTONS.shp")
