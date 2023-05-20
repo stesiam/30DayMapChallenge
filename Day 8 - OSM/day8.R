@@ -5,8 +5,6 @@ library(sf)
 library(ggtext)
 library(showtext)
 library(osmdata)
-library(emojifont) # Adds emoji icons w/o need to download
-
 
 font_add_google("Lobster", family = "clim")
 font_add_google("EB Garamond", family = "mont")
@@ -70,7 +68,7 @@ map = ggplot() +
   theme(
     plot.title = element_markdown(family = "clim", size = 60, hjust = 0.5),
     plot.subtitle = element_markdown(family = "serif", size = 40, margin = margin(t=10,l=20), lineheight = 0.4),
-    plot.caption = element_markdown(family = "mont", size = 20, hjust = 0.5)
+    plot.caption = element_markdown(family = "mont", size = 20, hjust = 0.5, margin = margin(t=20))
   )
 
 ggsave(
