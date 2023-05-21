@@ -68,7 +68,7 @@ map = ggplot() +
   theme(
     plot.title = element_markdown(family = "clim", size = 60, hjust = 0.5),
     plot.subtitle = element_markdown(family = "serif", size = 40, margin = margin(t=10,l=20), lineheight = 0.4),
-    plot.caption = element_markdown(family = "mont", size = 20, hjust = 0.5, margin = margin(t=20))
+    plot.caption = element_markdown(family = "mont", size = 20, hjust = 0.5)
   )
 
 ggsave(
