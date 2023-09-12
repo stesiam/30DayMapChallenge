@@ -90,6 +90,6 @@ ggsave(
   plot = plot,
   device = "png",
   height = 7,
-  width = 6,
+  width = 7,
   bg = "white"
 )
