@@ -63,7 +63,7 @@ diffPolyE <-evia_streets$osm_lines[lengths(st_intersects(evia_streets$osm_lines,
 
 
 plot = ggplot2::ggplot(data = greece_region_map) +
-  geom_sf() +
+  geom_sf(fill = "cornsilk") +
   geom_sf(data = evia_fire, inherit.aes = FALSE, color = "red") +
   geom_sf(data = diffPoly, color = "black") +
   geom_sf_text(data = diffPoly, aes(geometry = geometry, label = `name:en`),
@@ -91,5 +91,5 @@ ggsave(
   device = "png",
   height = 7,
   width = 7,
-  bg = "white"
+  bg = "#aedefc"
 )
